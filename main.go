@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"kktestgo/controllers"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -15,6 +16,8 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
 	}
+
+	controllers.Test()
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
