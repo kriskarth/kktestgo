@@ -4,10 +4,11 @@ import (
 	"io/ioutil"
 	"kktestgo/controllers"
 	"log"
-	// "github.com/krazybee/gofpdf"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/jung-kurt/gofpdf"
+	"github.com/krazybee/gofpdf"
+	// "github.com/jung-kurt/gofpdf"
 )
 
 func pdf() {
